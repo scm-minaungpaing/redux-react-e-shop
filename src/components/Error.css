@@ -1,0 +1,14 @@
+.error {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background-color: #fff;
+}
+h4>span {
+    font-size: 2rem;
+}
