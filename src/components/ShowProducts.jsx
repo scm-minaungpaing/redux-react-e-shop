@@ -1,5 +1,6 @@
 import React from 'react'
-import { Badge, Button, Card, Col, Row, NavLink } from 'react-bootstrap'
+import { Badge, Button, Card, Col, Row, Nav } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const ShowProducts = ({ products, filterItem, loading, setFilteritem, setLoading }) => {
     
@@ -41,11 +42,11 @@ const ShowProducts = ({ products, filterItem, loading, setFilteritem, setLoading
                                             <span className='fw-bold'>Price</span>: ${ item.price }
                                         </Card.Text>
                                     </div>
-                                    <NavLink href={`/product/${item.id}`}>
+                                    <Nav.Link as={Link} to={`/product/${item.id}`}>
                                         <Button variant="outline-dark" className='w-100'>
                                             Buy Now
                                         </Button>
-                                    </NavLink>
+                                    </Nav.Link>
                                 </Card.Body>
                             </Card>
                         </Col>

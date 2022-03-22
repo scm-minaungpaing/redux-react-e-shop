@@ -8,6 +8,7 @@ import Contact from './page/Contact';
 import 'react-loading-skeleton/dist/skeleton.css'
 import { Routes, Route} from 'react-router-dom'
 import Error from './components/Error';
+import Cart from './page/Cart';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route exact path="/product/:id" element={<Product/>} />
       <Route exact path="/about" element={<About/>} />
       <Route exact path="/contact" element={<Contact/>} />
+      <Route exact path="/cart" element={<Cart/>} />
       <Route exact path="*" element={<Error/>} />      
       <Route/>
       </Routes>
